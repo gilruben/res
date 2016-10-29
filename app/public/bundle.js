@@ -56,16 +56,29 @@
 	
 	var _reactRouter = __webpack_require__(172);
 	
+	var _header = __webpack_require__(235);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _mainSection = __webpack_require__(236);
+	
+	var _mainSection2 = _interopRequireDefault(_mainSection);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// css
+	// import './css/App.css';
+	
+	// components
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Hello World'
+	      'div',
+	      { className: 'mainApp' },
+	      _react2.default.createElement(_header2.default, null),
+	      _react2.default.createElement(_mainSection2.default, null)
 	    );
 	  }
 	});
@@ -27094,6 +27107,118 @@
 	
 	exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default);
 	module.exports = exports['default'];
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Header = _react2.default.createClass({
+	  displayName: "Header",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "headerContainer" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "headerTitle" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Le Resistance"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Play this game"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Header;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _playerSection = __webpack_require__(237);
+	
+	var _playerSection2 = _interopRequireDefault(_playerSection);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MainSection = _react2.default.createClass({
+	  displayName: 'MainSection',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'section',
+	      null,
+	      _react2.default.createElement(_playerSection2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = MainSection;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PlayerSection = _react2.default.createClass({
+	  displayName: "PlayerSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "playerSection" },
+	      _react2.default.createElement("div", { className: "playerInfo" }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "playerImage" },
+	        _react2.default.createElement("img", null)
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = PlayerSection;
 
 /***/ }
 /******/ ]);

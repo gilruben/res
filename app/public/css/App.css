@@ -1,0 +1,56 @@
+body, margin {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+
+.mainApp {
+  height: 100vh;
+}
+
+/*----------------Header--------------------*/
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  background-color: rebeccapurple;
+}
+
+.headerTitle {
+  background-color: firebrick;
+  width: 50%;
+  text-align: center;
+}
+
+.headerTitle h1 {
+  margin: 10px 0 10px 0;
+  font-size: 5rem;
+}
+
+.headerTitle p {
+  margin: 0 0 10px 0;
+}
+
+/*----------------Header--------------------*/
+
+
+
+/*----------------Player section--------------------*/
+.playerSection{
+  width: 25%;
+  /*height: 700px;*/
+  background-color: blue;
+}
+
+.playerInfo {
+  width: 90%;
+  height: 400px;
+  background-color: pink;
+}
+
+.playerImage {
+  width: 70%;
+  height: 350px;
+  background-color: yellow;
+}
+/*----------------/Player section--------------------*/

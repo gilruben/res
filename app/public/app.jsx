@@ -2,9 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, Link, browserHistory, hashHistory} from 'react-router';
 
+// components
+import Header from './components/header';
+import MainSection from './components/mainSection';
+
+// css
+// import './css/App.css';
+
 var App = React.createClass({
   render: function (){
-    return <h1>Hello World</h1>
+    return (
+      <div className="mainApp">
+        <Header />
+        <MainSection />
+      </div>
+    )
   }
 })
 
