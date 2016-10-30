@@ -7,7 +7,7 @@ const Header = React.createClass({
       <div className="headerContainer">
         <div className="headerTitle">
           <h1>Le Resistance</h1>
-          <p>Play this game</p>
+          <p>Please play this game</p>
         </div>
       </div>
     )

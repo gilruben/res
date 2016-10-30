@@ -8,6 +8,10 @@ body, margin {
   height: 100vh;
 }
 
+section {
+  display: flex;
+}
+
 /*----------------Header--------------------*/
 
 .headerContainer {
@@ -38,19 +42,80 @@ body, margin {
 /*----------------Player section--------------------*/
 .playerSection{
   width: 25%;
-  /*height: 700px;*/
+  height: 787px;
   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .playerInfo {
   width: 90%;
-  height: 400px;
+  height: 375px;
   background-color: pink;
 }
 
 .playerImage {
   width: 70%;
-  height: 350px;
+  height: 375px;
   background-color: yellow;
 }
 /*----------------/Player section--------------------*/
+
+
+
+/*----------------Board section--------------------*/
+.boardSection {
+  width: 50%;
+  height: ;
+  background-color: green;
+}
+.missionBoard {
+  height: 550px;
+  background-color: indigo;
+}
+/*----------------/Board section--------------------*/
+
+
+
+/*----------------Decision section--------------------*/
+
+.decisionSection {
+  width: 25%;
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playersDecision {
+  width: 90%;
+  height: 375px;
+  background-color: orange;
+}
+.missionDecision {
+  width: 90%;
+  height: 375px;
+  background-color: brown;
+}
+
+.passMission {
+  background-color: purple;
+  height: 50%;
+}
+.failMission {
+  background-color: grey;
+  height: 50%;
+}
+/*----------------/Decision section--------------------*/
+
+
+
+/*----------------Chatbox section--------------------*/
+.chatSection {
+  background-color: violet;
+  height: 237px;
+}
+/*----------------/Chatbox section--------------------*/

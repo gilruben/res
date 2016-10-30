@@ -27142,7 +27142,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Play this game"
+	          "Please play this game"
 	        )
 	      )
 	    );
@@ -27169,6 +27169,14 @@
 	
 	var _playerSection2 = _interopRequireDefault(_playerSection);
 	
+	var _boardSection = __webpack_require__(238);
+	
+	var _boardSection2 = _interopRequireDefault(_boardSection);
+	
+	var _decisionSection = __webpack_require__(239);
+	
+	var _decisionSection2 = _interopRequireDefault(_decisionSection);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var MainSection = _react2.default.createClass({
@@ -27178,11 +27186,14 @@
 	    return _react2.default.createElement(
 	      'section',
 	      null,
-	      _react2.default.createElement(_playerSection2.default, null)
+	      _react2.default.createElement(_playerSection2.default, null),
+	      _react2.default.createElement(_boardSection2.default, null),
+	      _react2.default.createElement(_decisionSection2.default, null)
 	    );
 	  }
 	});
 	
+	// components
 	exports.default = MainSection;
 
 /***/ },
@@ -27219,6 +27230,124 @@
 	});
 	
 	exports.default = PlayerSection;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _chatBox = __webpack_require__(240);
+	
+	var _chatBox2 = _interopRequireDefault(_chatBox);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var BoardSection = _react2.default.createClass({
+	  displayName: 'BoardSection',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'boardSection' },
+	      _react2.default.createElement('div', { className: 'missionBoard' }),
+	      _react2.default.createElement(_chatBox2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = BoardSection;
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var DecisionSection = _react2.default.createClass({
+	  displayName: "DecisionSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "decisionSection" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "playersDecision" },
+	        _react2.default.createElement(
+	          "button",
+	          null,
+	          "Approve mission"
+	        ),
+	        _react2.default.createElement(
+	          "button",
+	          null,
+	          "Reject mission"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "missionDecision" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "passMission" },
+	          "Pass"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "failMission" },
+	          "Fail"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = DecisionSection;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ChatSection = _react2.default.createClass({
+	  displayName: "ChatSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement("div", { className: "chatSection" });
+	  }
+	});
+	
+	exports.default = ChatSection;
 
 /***/ }
 /******/ ]);
