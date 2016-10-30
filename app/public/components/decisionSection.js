@@ -5,8 +5,8 @@ const DecisionSection = React.createClass ({
     return (
       <div className="decisionSection">
         <div className="playersDecision">
-          <button>Approve mission</button>
-          <button>Reject mission</button>
+          <div className="approveMission">Approve mission</div>
+          <div className="rejectMission">Reject mission</div>
         </div>
         <div className="missionDecision">
           <div className="passMission">Pass</div>

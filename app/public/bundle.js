@@ -27173,7 +27173,7 @@
 	
 	var _boardSection2 = _interopRequireDefault(_boardSection);
 	
-	var _decisionSection = __webpack_require__(239);
+	var _decisionSection = __webpack_require__(240);
 	
 	var _decisionSection2 = _interopRequireDefault(_decisionSection);
 	
@@ -27245,7 +27245,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _chatBox = __webpack_require__(240);
+	var _chatBox = __webpack_require__(239);
 	
 	var _chatBox2 = _interopRequireDefault(_chatBox);
 	
@@ -27282,6 +27282,40 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var ChatSection = _react2.default.createClass({
+	  displayName: "ChatSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "chatSection" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "Chat box goes here"
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ChatSection;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	var DecisionSection = _react2.default.createClass({
 	  displayName: "DecisionSection",
 	
@@ -27293,13 +27327,13 @@
 	        "div",
 	        { className: "playersDecision" },
 	        _react2.default.createElement(
-	          "button",
-	          null,
+	          "div",
+	          { className: "approveMission" },
 	          "Approve mission"
 	        ),
 	        _react2.default.createElement(
-	          "button",
-	          null,
+	          "div",
+	          { className: "rejectMission" },
 	          "Reject mission"
 	        )
 	      ),
@@ -27322,32 +27356,6 @@
 	});
 	
 	exports.default = DecisionSection;
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var ChatSection = _react2.default.createClass({
-	  displayName: "ChatSection",
-	
-	  render: function render() {
-	    return _react2.default.createElement("div", { className: "chatSection" });
-	  }
-	});
-	
-	exports.default = ChatSection;
 
 /***/ }
 /******/ ]);

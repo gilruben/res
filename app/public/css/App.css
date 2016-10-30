@@ -1,7 +1,6 @@
 body, margin {
   margin: 0;
   padding: 0;
-  background-color: aqua;
 }
 
 .mainApp {
@@ -17,11 +16,9 @@ section {
 .headerContainer {
   display: flex;
   justify-content: center;
-  background-color: rebeccapurple;
 }
 
 .headerTitle {
-  background-color: firebrick;
   width: 50%;
   text-align: center;
 }
@@ -43,7 +40,6 @@ section {
 .playerSection{
   width: 25%;
   height: 787px;
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,13 +49,13 @@ section {
 .playerInfo {
   width: 90%;
   height: 375px;
-  background-color: pink;
+  background-color: #efefef;
 }
 
 .playerImage {
   width: 70%;
   height: 375px;
-  background-color: yellow;
+  background-color: #efefef;
 }
 /*----------------/Player section--------------------*/
 
@@ -69,11 +65,11 @@ section {
 .boardSection {
   width: 50%;
   height: ;
-  background-color: green;
+
 }
 .missionBoard {
   height: 550px;
-  background-color: indigo;
+  background-color: #efefef;
 }
 /*----------------/Board section--------------------*/
 
@@ -83,7 +79,6 @@ section {
 
 .decisionSection {
   width: 25%;
-  background-color: lavender;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -93,20 +88,30 @@ section {
 .playersDecision {
   width: 90%;
   height: 375px;
-  background-color: orange;
+  display: flex;
+  /*justify-content: space-between;*/
 }
+
+.approveMission {
+  background-color: #efefef;
+  width: 50%;
+}
+
+.rejectMission {
+  background-color: #969595;
+  width: 50%;
+}
+
 .missionDecision {
   width: 90%;
   height: 375px;
-  background-color: brown;
 }
-
 .passMission {
-  background-color: purple;
+  background-color: #efefef;
   height: 50%;
 }
 .failMission {
-  background-color: grey;
+  background-color: #969595;
   height: 50%;
 }
 /*----------------/Decision section--------------------*/
@@ -115,7 +120,10 @@ section {
 
 /*----------------Chatbox section--------------------*/
 .chatSection {
-  background-color: violet;
+  background-color: #969595;
   height: 237px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*----------------/Chatbox section--------------------*/
