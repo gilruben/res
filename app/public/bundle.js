@@ -56,16 +56,29 @@
 	
 	var _reactRouter = __webpack_require__(172);
 	
+	var _header = __webpack_require__(235);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _mainSection = __webpack_require__(236);
+	
+	var _mainSection2 = _interopRequireDefault(_mainSection);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// css
+	// import './css/App.css';
+	
+	// components
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Hello World'
+	      'div',
+	      { className: 'mainApp' },
+	      _react2.default.createElement(_header2.default, null),
+	      _react2.default.createElement(_mainSection2.default, null)
 	    );
 	  }
 	});
@@ -27094,6 +27107,255 @@
 	
 	exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default);
 	module.exports = exports['default'];
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Header = _react2.default.createClass({
+	  displayName: "Header",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "headerContainer" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "headerTitle" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Le Resistance"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Please play this game"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Header;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _playerSection = __webpack_require__(237);
+	
+	var _playerSection2 = _interopRequireDefault(_playerSection);
+	
+	var _boardSection = __webpack_require__(238);
+	
+	var _boardSection2 = _interopRequireDefault(_boardSection);
+	
+	var _decisionSection = __webpack_require__(240);
+	
+	var _decisionSection2 = _interopRequireDefault(_decisionSection);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MainSection = _react2.default.createClass({
+	  displayName: 'MainSection',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'section',
+	      null,
+	      _react2.default.createElement(_playerSection2.default, null),
+	      _react2.default.createElement(_boardSection2.default, null),
+	      _react2.default.createElement(_decisionSection2.default, null)
+	    );
+	  }
+	});
+	
+	// components
+	exports.default = MainSection;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PlayerSection = _react2.default.createClass({
+	  displayName: "PlayerSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "playerSection" },
+	      _react2.default.createElement("div", { className: "playerInfo" }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "playerImage" },
+	        _react2.default.createElement("img", null)
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = PlayerSection;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _chatBox = __webpack_require__(239);
+	
+	var _chatBox2 = _interopRequireDefault(_chatBox);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var BoardSection = _react2.default.createClass({
+	  displayName: 'BoardSection',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'boardSection' },
+	      _react2.default.createElement('div', { className: 'missionBoard' }),
+	      _react2.default.createElement(_chatBox2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = BoardSection;
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ChatSection = _react2.default.createClass({
+	  displayName: "ChatSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "chatSection" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "Chat box goes here"
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ChatSection;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var DecisionSection = _react2.default.createClass({
+	  displayName: "DecisionSection",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "decisionSection" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "playersDecision" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "approveMission" },
+	          "Approve mission"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "rejectMission" },
+	          "Reject mission"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "missionDecision" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "passMission" },
+	          "Pass"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "failMission" },
+	          "Fail"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = DecisionSection;
 
 /***/ }
 /******/ ]);

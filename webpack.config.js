@@ -17,7 +17,8 @@ module.exports = {
           presets: ['es2015', 'react']
           //transpiling & compilation
         }
-      }
+      },
+      { test: /\.css$/, loader: 'style!css!postcss'}
     ]
   },
   devtool: 'source-map',
