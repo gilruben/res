@@ -64,8 +64,6 @@ section {
 /*----------------Board section--------------------*/
 .boardSection {
   width: 50%;
-  height: ;
-
 }
 .missionBoard {
   height: 550px;
@@ -89,7 +87,6 @@ section {
   width: 90%;
   height: 375px;
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .approveMission {
